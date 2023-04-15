@@ -3,8 +3,8 @@ import requests
 from web3 import Web3
 from datetime import datetime
 
-INFURA_API_KEY = "63bf9152e4dd497ea23ff239fa0fcec0"
-ETHERSCAN_API_KEY = "HWTK4C8Z7G1U2MZPAGKB98J936BBR55DZ1"  # Uzupełnij swoim kluczem API Etherscan
+INFURA_API_KEY = "YOUR_INFURA_API_KEY"
+ETHERSCAN_API_KEY = "YOUR_ETHERSCAN_API_KEY"  # Uzupełnij swoim kluczem API Etherscan
 
 
 def main():
