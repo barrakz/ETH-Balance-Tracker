@@ -5,8 +5,8 @@ from datetime import datetime
 import tkinter as tk
 from tkinter import messagebox
 
-INFURA_API_KEY = "63bf9152e4dd497ea23ff239fa0fcec0"
-ETHERSCAN_API_KEY = "HWTK4C8Z7G1U2MZPAGKB98J936BBR55DZ1"
+INFURA_API_KEY = "YOUR_INFURA_API_KEY"
+ETHERSCAN_API_KEY = "YOUR_ETHERSCAN_API_KEY"
 
 
 def get_last_transactions(eth_address, n=5):
