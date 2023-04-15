@@ -6,6 +6,7 @@ from datetime import datetime
 INFURA_API_KEY = "63bf9152e4dd497ea23ff239fa0fcec0"
 ETHERSCAN_API_KEY = "HWTK4C8Z7G1U2MZPAGKB98J936BBR55DZ1"  # Uzupełnij swoim kluczem API Etherscan
 
+
 def main():
     w3 = Web3(Web3.HTTPProvider(f"https://mainnet.infura.io/v3/{INFURA_API_KEY}"))
 
@@ -32,13 +33,14 @@ def main():
             print(f"  Hash: {tx['hash']}")
             print(f"  Od: {tx['from']}")
             print(f"  Do: {tx['to']}")
-            print(f"  Wartość: {int(tx['value']) / 10**18} ETH")
-            print(f"  Opłata: {int(tx['gasPrice']) * int(tx['gasUsed']) / 10**18} ETH")
+            print(f"  Wartość: {int(tx['value']) / 10 ** 18} ETH")
+            print(f"  Opłata: {int(tx['gasPrice']) * int(tx['gasUsed']) / 10 ** 18} ETH")
             print(f"  Data: {datetime.utcfromtimestamp(int(tx['timeStamp']))}")
             print(f"  Blok: {tx['blockNumber']}")
             print()
     else:
         print("Nie udało się pobrać transakcji.")
+
 
 def get_last_transactions(eth_address, n=5):
     url = f"https://api.etherscan.io/api?module=account&action=txlist&address={eth_address}&sort=desc&apikey={ETHERSCAN_API_KEY}"
@@ -50,6 +52,7 @@ def get_last_transactions(eth_address, n=5):
             transactions = data["result"][:n]
             return transactions
     return None
+
 
 if __name__ == "__main__":
     main()
