@@ -7,4 +7,4 @@ The main() function initializes a Web3 object, prompts the user for an Ethereum 
 
 The get_last_transactions() function takes an Ethereum address and an optional number of transactions to retrieve, sends a GET request to an Etherscan API URL, and returns the specified number of transactions if the response is successful.
 
-To run the script, the user needs to replace the API key placeholders with their own keys and execute the script in a terminal or command prompt using python script.py.
+To run the script, the user needs to replace the API key placeholders with their own keys and execute the script in a terminal or command prompt using python wallet.py.
