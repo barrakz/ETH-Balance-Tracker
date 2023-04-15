@@ -9,5 +9,5 @@ address = input("Podaj adres konta MetaMask: ")
 
 balance = w3.eth.get_balance(address)
 
-print("Saldo portfela {}: {} ETH".format(address, Web3.from_wei(balance, "ether")))
+print("Saldo portfela: {} ETH".format(Web3.from_wei(balance, "ether")))
 
