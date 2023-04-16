@@ -9,4 +9,6 @@ The get_last_transactions() function takes an Ethereum address and an optional n
 
 To run the script, the user needs to replace the API key placeholders with their own keys and execute the script in a terminal or command prompt using python wallet.py.
 
+The script in the wallet2.py file launches a program in a window using tkinter.
+
 ![image](https://user-images.githubusercontent.com/96372115/232220545-90cda8ae-2d14-46cc-a6d8-680e38ac9aaa.png)
